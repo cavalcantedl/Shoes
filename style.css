@@ -4,68 +4,33 @@ body, html{
     padding: 0;
     text-align: center;
 }
-
-.wrapper{
-    max-width: 1280px;
-    margin: 0 auto;
-    text-align: left;
-}
-header{
-    line-height: 120px;
-    height: 130px;
-    -webkit-box-shadow: 0px 8px 46px 8px rgba(0,0,0,0.54); 
-    box-shadow: 0px 8px 46px 8px rgba(0,0,0,0.54);
-
-}
-header .wrapper{
-    display: flex;
-    justify-content: space-between;
-}
-header nav{
-    font-size: 24px;
-    font-weight: 600;
-    padding-right: 40px;
-}
-header nav a{
-   margin-left: 20px;
-   text-decoration: none;
-   line-height: 24px;
-   color: #777777;
-}
-header h1{
-    margin: 0;
-}
 .banner{
     display: flex;
     max-width: 100vw;
     align-self: center;
 }
-h2{
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 82px;
-    text-align: center;
+.colunas{
+    font-size: 14px;
+    list-style: none;   
+}
+.colunas a{
+    text-decoration: none;
+    color: white; 
 }
 .conteiner{
     display: flex;
     justify-content: space-evenly;
 }
-.img7{
-    height: 600px;
-    width: 400px;
-    align-self: center;
-}
-.vitrine{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 1280px;
-    height: 468px;
+content .wrapper .porcentagem{
     background-color: #C2185B;
-    margin-top: 0px;
-    
+    display: flex;
+    width: 1280px;
+    height: 175px;
+    margin-bottom: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: white;
 }
 content .wrapper .vitrine .caixa1{
     display: flex;
@@ -85,17 +50,11 @@ content .wrapper .vitrine .caixa1 .detalhe a{
    color: black;
    text-align: center;
    font-weight: bold;
-}    
-span{
-    padding-left: 20px;
 }
-content .wrapper .porcentagem{
-background-color: #C2185B;
-width: 1280px;
-height: 175px;
-margin-bottom: 0;
-text-align: center;
-color: white;
+.det{
+    width: 255px;
+    height: 91px;
+    flex-direction: row;
 }
 footer{
     width: 1280px;
@@ -104,34 +63,63 @@ footer{
     margin: 0 auto;
     font-size: 14px;
     color: #FFFFFF;
-    margin-top: 100px;
+    margin-top: 79px;
 }
 footer .wrapper{
     display: flex;
     justify-content:space-around;
     align-items: center;
     
+} 
+header{
+    line-height: 120px;
+    height: 130px;
+    -webkit-box-shadow: 0px 8px 46px 8px rgba(0,0,0,0.54); 
+    box-shadow: 0px 8px 46px 8px rgba(0,0,0,0.54);
 }
-.colunas{
-    font-size: 14px;
-    list-style: none;
-    
+header h1{
+    margin: 0;
 }
-.colunas a{
-    text-decoration: none;
-    color: white;
-    
-    }
-.produto_destaque {
-    font-size: 39px;
+header nav{
+    font-size: 24px;
+    font-weight: 600;
+    padding-right: 40px;
+}
+header nav a{
+   margin-left: 20px;
+   text-decoration: none;
+   line-height: 24px;
+   color: #777777;
+}
+header .wrapper{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
+    justify-content: space-between;
+}
+h2{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 82px;
+    text-align: center;
+}
+.img7{
+    height: 600px;
+    width: 400px;
+    align-self: center;
+}
+.imgs{
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    bottom: 100px;
 }
 .link_produto a {
     width: 403px;
     height: 99px; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: #C2185B;
     text-decoration: none;
     color: white;
@@ -140,17 +128,52 @@ footer .wrapper{
 .link_produto {
     display: flex;
     flex-direction: column;
-    
-
+    position: relative;
+    top: 140px;
 }
-.imgs{
-    flex-direction: column;
-    justify-content: space-between;
+.produto_destaque {
+    font-size: 39px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.det{
-    width: 255px;
-    height: 91px;
-    flex-direction: row;
-
-
+span{
+    padding-left: 20px;
+}
+.vitrine{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 1280px;
+    height: 468px;
+    background-color: #C2185B;
+    margin-top: 0px;  
+}
+.wrapper{
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: left;
+}
+.wrapperform{
+    max-width: 100vw;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+}
+form{
+    width: 538px;
+    text-align: left;
+}
+.loremform{
+    display: flex;
+    width: 400px;
+    height: 448px;
+    font-size: 14px;
+    align-self: center;
+}
+label input[type="checkbox"]{
+    display: inline;
+}
+label input[type="radio"]{
+    display: inline;
 }
